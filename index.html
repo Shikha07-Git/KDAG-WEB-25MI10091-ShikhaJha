@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDAG Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="https://www.kdagiitkgp.com/">
+            <img src="logo.png" alt="KDAG Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="https://www.kdagiitkgp.com/events">Events</a>
+            <a href="https://www.kdagiitkgp.com/gallery">Gallery</a>
+            <a href="https://www.kdagiitkgp.com/ml_sheet">ML Sheet</a>
+            <a href="https://www.kdagiitkgp.com/resources">Resources</a>
+            <a href="https://www.kdagiitkgp.com/blogs">Blog</a>
+            <a href="https://www.kdagiitkgp.com/team">Team</a>
+            <a href="#" class="active">Quiz</a>
+            <div class="nav-icons">
+                <a href="https://www.kdagiitkgp.com/forum">
+                <img src="chat-icon.png" alt="Chat" class="icon-img" style="width: 47px; height: 38px;">
+                </a>
+                <a href="https://www.kdagiitkgp.com/auth">
+                <img src="user-icon.png" alt="User" class="icon-img">
+                </a>
+            </div>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>Quiz</h1>
+        <p>
+        Looking for a quick mental boost? This quiz offers a short, engaging experience designed to challenge 
+        and refresh your mind. With concise questions and a touch of surprise, it's the perfect way to test your
+        skills—whether you aim for accuracy or simply enjoy the process!
+        </p>
+    </section>
+
+
+    <!-- Quiz Section -->
+    <div class="quiz-container">
+        <h1><span>MCQs</span> (Single option correct)</h1>
+        <form id="quiz-form">
+        <div class="question">
+            <p>1. Which of the following is a branch of AI?</p>
+            <label><input type="radio" name="q1" value="a"> Natural Language Processing</label>
+            <label><input type="radio" name="q1" value="b"> HTML Programming</label>
+            <label><input type="radio" name="q1" value="c"> CSS Styling</label>
+        </div>
+
+        <div class="question">
+            <p>2. What is the main purpose of machine learning?</p>
+            <label><input type="radio" name="q2" value="a"> To make computers learn from data</label>
+            <label><input type="radio" name="q2" value="b"> To create static websites</label>
+            <label><input type="radio" name="q2" value="c"> To manage databases</label>
+        </div>
+
+        <div class="question">
+            <p>3. Which of these is an example of supervised learning?</p>
+            <label><input type="radio" name="q3" value="a"> Regression</label>
+            <label><input type="radio" name="q3" value="b"> Clustering</label>
+            <label><input type="radio" name="q3" value="c"> Association Rule Mining</label>
+      </div>
+
+        <div class="question">
+            <p>4. Which Python library is widely used for machine learning?</p>
+            <label><input type="radio" name="q4" value="a"> TensorFlow</label>
+            <label><input type="radio" name="q4" value="b"> Flask</label>
+            <label><input type="radio" name="q4" value="c"> Django</label>
+        </div>
+
+        <div class="question">
+            <p>5. What is the main goal of AI?</p>
+            <label><input type="radio" name="q5" value="a"> Make machines intelligent</label>
+            <label><input type="radio" name="q5" value="b"> Store large datasets</label>
+            <label><input type="radio" name="q5" value="c"> Design web pages</label>
+        </div>
+
+        <button type="button" id="submit-btn">Submit</button>
+        </form>
+
+        <div id="result">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <footer class="footer">
+    <div class="footer-container">
+    
+
+        <div class="footer-column">
+            <h3>Main Menu</h3>
+            <a href="https://www.kdagiitkgp.com/events">Events</a>
+            <a href="https://www.kdagiitkgp.com/resources">Resources</a>
+            <a href="https://www.kdagiitkgp.com/blogs">Blog</a>
+        </div>
+
+        <div class="footer-column social-icons">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/kgpdag" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBF73o0P4eNj_YuVFZtaVHAxum9_p4ARUOAg&s" alt="Facebook" width="40">
+            </a>
+            <a href="https://www.linkedin.com/company/kdag/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIaMRGRXIcw7PLuQwrNT3owQpigxHG_LJNWQ&s" alt="LinkedIn" width="40">
+            </a>
+            <a href="https://www.instagram.com/kdag.iitkgp/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" width="40">
+            </a>
+            <a href="mailto:kdagiitkgp@gmail.com" target="_blank">
+            <img src="https://images.seeklogo.com/logo-png/27/3/google-gmail-logo-png_seeklogo-273201.png" alt="Gmail" width="40">
+            </a>
+        </div>
+
+
+    
+        <div class="footer-column">
+            <h3>Kharagpur Data Analytics Group</h3>
+            <p>Indian Institute of Technology Kharagpur, India</p>
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <a href="https://www.kdagiitkgp.com/">
+        <img src="logo3.png" alt="KDAG Logo">
+        </a>
+        <p><a href="http://iitkgp.ac.in/">IIT KGP</a> | <a href="https://www.kdagiitkgp.com/team">Contact Us</a> | <a href="https://www.kdagiitkgp.com/privacy-policy">Privacy Policy</a></p>
+    </div>
+    </footer>
+
+</body>
+</html>

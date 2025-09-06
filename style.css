@@ -1,0 +1,474 @@
+/* General */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px 40px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  inset: 0 0 auto 0; 
+  z-index: 1000;
+  border-bottom: 2px solid rgb(61, 54, 54);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 2.8rem;
+}
+
+.logo-text .highlight {
+  color: #ff0000;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #ff0000;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:focus-visible {
+  outline: 2px solid #ff0000;
+  outline-offset: 2px;
+}
+
+.nav-links .active {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-img {
+  height: 40px;
+  width: 55px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Page header */
+.page-header {
+  text-align: center;
+  margin: 150px auto 60px; 
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.page-header h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.page-header p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #ccc;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Quiz Container */
+.quiz-container {
+  width: 90%;
+  max-width: 700px;
+  background: rgba(20, 20, 20, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  margin: 140px auto 50px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+h1 span {
+  color: #ff0000;
+}
+
+/* Questions */
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  padding: 8px 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+label:hover {
+  background: #111;
+  border-color: #ff0000;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #ff0000;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff0000;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+/* Result */
+#result {
+  margin-top: 25px;
+  padding: 15px;
+  background: #111;
+  border-left: 4px solid #ff0000;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+#result h2 {
+  color: #ff5d73;
+}
+
+#result p {
+  margin: 5px 0;
+}
+
+#result p.correct {
+  color:white;
+}
+
+#result p.wrong {
+  color: rgb(240, 184, 184)
+}
+
+#result p.skipped {
+  color: antiquewhite;
+}
+
+
+
+/*Footer*/
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #f33;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 10px;
+  border-right: 1px solid #333;
+}
+
+.footer-column:last-child {
+  border-right: none;
+}
+
+.footer-column h3 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.footer-column a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 2px 0;
+  font-size: 0.95rem;
+}
+
+.footer-column a:hover {
+  color: #ff0000;
+}
+
+.footer-column p {
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.footer-column.social-icons {
+  text-align: center;
+}
+
+.footer-column.social-icons a {
+  display: inline-block;
+  margin: 0 2px;
+  padding-right: 2px;
+  border-right: 1px solid #fff;
+}
+
+.footer-column.social-icons a:last-child {
+  border-right: none;
+}
+
+.social-icons {
+  width: 140px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-bottom img {
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ff0000;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Hamburger only on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 55px; 
+    right: 15px;
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    width: 180px;
+    gap: 10px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+
+  .hamburger {
+    display: flex; 
+  }
+
+  /* Reduce navbar padding for mobile */
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  /* Page header scaling */
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  .page-header p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Quiz container adjustments */
+  .quiz-container {
+    margin: 100px 15px;
+    padding: 20px;
+  }
+
+  /* Questions and labels */
+  .question p {
+    font-size: 1rem;
+  }
+  label {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+
+  /* Submit button smaller */
+  button {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  /* Footer adjustments */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .footer-column {
+    border-right: none;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  /* Footer social icons spacing */
+  .footer-column.social-icons a {
+    margin: 0 4px;
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+
