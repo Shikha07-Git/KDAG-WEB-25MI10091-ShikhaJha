@@ -40,8 +40,8 @@ python -m http.server
 
 ## File Structure
 
-├── index.html # Quiz markup and navbar
-├── style.css # KDAG-themed styling + responsive design
-├── script.js # Quiz logic: scoring, per-question feedback, hamburger menu
-├── Logo.png / logo3.png # KDAG branding
-├── chat-icon.png / user-icon.png # Navbar icons
+├── index.html # Quiz markup and navbar <br>
+├── style.css # KDAG-themed styling + responsive design <br>
+├── script.js # Quiz logic: scoring, per-question feedback, hamburger menu <br>
+├── Logo.png / logo3.png # KDAG branding <br>
+├── chat-icon.png / user-icon.png # Navbar icons <br>
